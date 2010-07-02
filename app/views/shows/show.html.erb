@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @show.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @show.description %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%=h @show.picture %>
+</p>
+
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Back', shows_path %>
