@@ -1,0 +1,148 @@
+/* 
+    Document   : mediasite.css
+    Created on : Jul 2, 2010, 8:24:51 AM
+    Author     : wilkersonj
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+div.header
+      {
+        /*border:1px solid black;*/
+        width:100%;
+        height:60px;
+        position:absolute;
+      }
+
+      div.content-row
+      {
+        /*border:1px solid black;*/
+        width:100%;
+        position:relative;
+        top:60px;
+      }
+
+      div.col-wrapper
+      {
+        /*border:1px solid black;*/
+        width: 750px;
+        margin:0 auto;
+      }
+
+      div.middle-col
+      {
+        /*border:1px solid black;*/
+        height:800px;
+        width:752px;
+      }
+
+      div.content-link
+      {
+        /*border:1px solid black;*/
+        width:250px;
+        height:40px;
+        padding-top: 12px;
+        float:left;        
+        background:none;
+      }
+
+    a
+    {
+        text-decoration: none
+    }
+
+      div.content-links
+      {
+        /*border:1px solid black;*/
+        
+        clear:both;
+        text-align:center;
+        width:752px;
+        height: 40px;
+        -webkit-border-top-left-radius: 8px;
+        -webkit-border-top-right-radius: 8px;
+        -moz-border-radius-topleft: 8px;
+        -moz-border-radius-topright: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background:#CCCCCC;
+        border-bottom:2px solid grey;
+      }
+      div.content-links:hover
+      {
+          color:gray;
+      }
+
+      div.display-window
+      {
+        /*border:1px solid black;*/
+        background:black;
+        width:752px;
+        height:400px;
+        -webkit-border-bottom-left-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+        -moz-border-radius-bottomleft: 8px;
+        -moz-border-radius-bottomright: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      div.content-column
+      {
+        margin-top:1px;
+        border:1px solid black;
+        width:752px;
+        height:400;
+        float:left;
+        -webkit-border-top-left-radius: 8px;
+        -webkit-border-top-right-radius: 8px;
+        -moz-border-radius-topleft: 8px;
+        -moz-border-radius-topright: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+
+        -webkit-border-bottom-left-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+        -moz-border-radius-bottomleft: 8px;
+        -moz-border-radius-bottomright: 8px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      div.movie-column
+      {
+        /*border:1px solid black;*/
+        /*background:green;*/
+        width:250px;
+        height:400px;
+        float:left;
+        border-right:1px solid black;
+      }
+
+      div.show-column
+      {
+        /*border:1px solid black;*/
+        /*background:red;*/
+        width:250px;
+        height:400px;
+        float:left;
+        border-right:1px solid black;
+      }
+
+      div.music-column
+      {
+        /*border:1px solid black;*/
+        /*background:yellow;*/
+        width:250px;
+        height:400px;
+        float:left;
+      }
