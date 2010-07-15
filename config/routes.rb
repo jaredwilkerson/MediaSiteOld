@@ -1,4 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.root :controller => "home"
+  
+  map.resources :songs
+
   map.resources :movies
 
   map.resources :shows
@@ -6,6 +11,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :shows
 
   map.resources :movies
+
+  map.resources :home
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
 

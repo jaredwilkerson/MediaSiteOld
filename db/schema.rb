@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100701115658) do
+ActiveRecord::Schema.define(:version => 20100714142335) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
@@ -18,12 +18,27 @@ ActiveRecord::Schema.define(:version => 20100701115658) do
     t.string   "picture"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.datetime "last_played"
   end
 
   create_table "shows", :force => true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "picture"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "last_played"
+  end
+
+  create_table "songs", :force => true do |t|
+    t.string   "title"
+    t.string   "genre"
+    t.string   "artist"
+    t.string   "album"
+    t.integer  "year"
+    t.string   "picture"
+    t.integer  "play_count"
+    t.datetime "last_played"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

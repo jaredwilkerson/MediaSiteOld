@@ -1,24 +1,23 @@
-<h1>Listing shows</h1>
+<!show index>
+<%= stylesheet_link_tag "mediasite", :media => "all" %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Picture</th>
-  </tr>
-
-<% @shows.each do |show| %>
-  <tr>
-    <td><%=h show.title %></td>
-    <td><%=h show.description %></td>
-    <td><%=h show.picture %></td>
-    <td><%= link_to 'Show', show %></td>
-    <td><%= link_to 'Edit', edit_show_path(show) %></td>
-    <td><%= link_to 'Destroy', show, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New show', new_show_path %>
+      <div class="header"><%= link_to 'Home', :home => :index %></div><!this is the header row>
+        <div class="content-row">
+          <div class="col-wrapper">
+            <!-- <div class="left-col"></div><!this is the left column> -->
+            <div class="middle-col"><!the middle column with all the "stuff">
+                <div class="content-links"><!the first row with links to the content pages>
+                  <div class="content-link"><%= link_to 'Movies', movies_path %></div>
+                  <div class="selected-content-link"><%= link_to 'Shows', shows_path %></div>
+                  <div class="content-link"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
+                </div>
+                <div class="display-window"><!the second row containing the display window>
+                </div>
+                <div class="content-column" style="text-align:center"><!the third row containing the content columns>
+                  <div class="show-grid"><h3>Shows</h3></div>
+                </div>
+            </div>
+            <!--<div class="right-col"></div><!this is the right column> -->
+          </div>
+        </div>
+      <div class="footer"></div><!this is the footer>

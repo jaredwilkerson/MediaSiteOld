@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html><!home index>
   <head>
     <%= stylesheet_link_tag "mediasite", :media => "all" %>
   </head>
   <body>
-      <div class="header"></div><!this is the header row>
+      <div class="header"><%= link_to 'Home', :home => :index %></div><!this is the header row>
         <div class="content-row">
           <div class="col-wrapper">
             <!-- <div class="left-col"></div><!this is the left column> -->
@@ -12,7 +12,7 @@
                 <div class="content-links"><!the first row with links to the content pages>
                   <div class="content-link"><%= link_to 'Movies', movies_path %></div>
                   <div class="content-link"><%= link_to 'Shows', shows_path %></div>
-                  <div class="content-link"><a href="/music">Music</a></div><!this is just a placeholder till I make the music stuff>
+                  <div class="content-link"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
                 </div>
                 <div class="display-window"><!the second row containing the display window>
                 </div>
