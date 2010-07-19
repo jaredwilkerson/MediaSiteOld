@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  layout "main"
+
   # GET /movies
   # GET /movies.xml
   def index

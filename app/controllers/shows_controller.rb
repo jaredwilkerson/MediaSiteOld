@@ -1,4 +1,6 @@
 class ShowsController < ApplicationController
+  layout "main"
+
   # GET /shows
   # GET /shows.xml
   def index
