@@ -1,6 +1,6 @@
-<!home index>
+<!song index>
 <% content_for :header_links do %>
-  <%= link_to image_tag("home.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" %>
+  <%= link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" %>
   <%= link_to image_tag("configuration-ns.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" %>
 <% end %>
 
@@ -15,8 +15,8 @@
 
 <% content_for :content_column do %>
         <div class="content-column" style="text-align:center"><!the third row containing the content columns>
-          <div class="movie-column"><h3>Recent Movies</h3></div>
-          <div class="show-column"><h3>Recent Shows</h3></div>
-          <div class="music-column"><h3>Recent Music</h3></div>
+          <div class="band-column"><h3>Bands</h3></div>
+            <div class="category-column"><h3>Categories</h3></div>
+            <div class="playlist-column"><h3>Playlists</h3></div>
         </div>
 <% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  genre: MyString
+  artist: MyString
+  album: MyString
+  year: 1
+  picture: MyString
+  play_count: 1
+  last_played: 2010-07-14 10:23:35
+
+two:
+  title: MyString
+  genre: MyString
+  artist: MyString
+  album: MyString
+  year: 1
+  picture: MyString
+  play_count: 1
+  last_played: 2010-07-14 10:23:35
