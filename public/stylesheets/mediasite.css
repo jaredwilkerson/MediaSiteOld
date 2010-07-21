@@ -32,6 +32,11 @@ root {
         font-size:large;
       }
 
+      textarea
+      {
+        resize: none;
+      }
+
       a:visited
       {
         color: black;
@@ -213,6 +218,7 @@ root {
         width:371px;
         height:300px;
         float:left;
+        overflow:auto;
       }
 
       div.content-column
