@@ -163,20 +163,56 @@ root {
 
       div.maintenance-window
       {
-
         border-left:1px solid black;
         border-right:1px solid black;
         border-bottom:1px solid black;
         padding-top:1px;
+        padding-left:4px;
+        padding-right:4px;
         /*background:black;*/
-        width:751px;
-        height:800px;
+        width:743px;
+        height:900px;
+        font-size:small;
         -webkit-border-bottom-left-radius: 8px;
         -webkit-border-bottom-right-radius: 8px;
         -moz-border-radius-bottomleft: 8px;
         -moz-border-radius-bottomright: 8px;
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
+      }
+
+      div.movie-maintenance
+      {
+        border-bottom:1px solid grey;
+        width:743px;
+        height:300px;
+      }
+
+      div.maintenance-show
+      {
+        border-bottom:1px solid grey;
+        width:743px;
+        height:300px;
+      }
+
+      div.maintenance-song
+      {        
+        width:743px;;
+        height:300px;
+      }
+
+      div.new-entry
+      {
+        width:371px;
+        height:300px;
+        float:left;
+      }
+
+      div.select-entry
+      {
+        width:371px;
+        height:300px;
+        float:left;
       }
 
       div.content-column

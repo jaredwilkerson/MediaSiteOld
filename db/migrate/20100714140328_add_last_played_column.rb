@@ -5,7 +5,7 @@ class AddLastPlayedColumn < ActiveRecord::Migration
   end
 
   def self.down
-    remove column :movies, :last_played
-    remove column :shows, :lastplayed
+    remove_column :movies, :last_played
+    remove_column :shows, :lastplayed
   end
 end

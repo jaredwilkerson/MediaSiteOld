@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100714142335) do
+ActiveRecord::Schema.define(:version => 20100721150217) do
 
   create_table "movies", :force => true do |t|
     t.string   "title"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100714142335) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "last_played"
+    t.string   "location"
   end
 
   create_table "shows", :force => true do |t|
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20100714142335) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "last_played"
+    t.string   "location"
   end
 
   create_table "songs", :force => true do |t|
@@ -41,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20100714142335) do
     t.datetime "last_played"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "location"
   end
 
 end
