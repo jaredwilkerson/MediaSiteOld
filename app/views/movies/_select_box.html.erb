@@ -1,0 +1,12 @@
+<div class="select-entry">  
+<ul style="list-style-type: none">
+  <%@movies = Movie.all%>
+
+  <% @movies.each do |movie| %>
+    <li>
+      <%= check_box_tag 'movie_names[]', movie.title -%>
+      <%= h movie.title  %>
+    </li>
+  <% end %>
+</ul>
+</div>

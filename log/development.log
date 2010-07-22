@@ -5672,3 +5672,660 @@ Rendering maintenance/index
   [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
 Rendered movies/_new (20.9ms)
 Completed in 31ms (View: 25, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (84.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:49:32) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (199.2ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (339.6ms)
+ERROR: compiling _run_erb_app47views47movies47_select_box46html46erb_locals_object_select_box RAISED compile error
+/home/wilkersonj/NetBeansProjects/MediaSite/app/views/movies/_select_box.html.erb:10: syntax error, unexpected kENSURE, expecting kEND
+/home/wilkersonj/NetBeansProjects/MediaSite/app/views/movies/_select_box.html.erb:12: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47movies47_select_box46html46erb_locals_object_select_box(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];select_box = local_assigns[:select_box];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"select-entry\">  \n"
+@output_buffer.concat "<ul>\n"
+@output_buffer.concat "  "; @movies = Movie.all; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  ";  @movies.each do |movie| ; @output_buffer.concat "\n"
+@output_buffer.concat "    <li>"; @output_buffer.concat(( check_box_tag 'movie_names[]', movie.name, select_movie?(movie) ).to_s); @output_buffer.concat " </li>\n"
+@output_buffer.concat "</ul>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/wilkersonj/NetBeansProjects/MediaSite/app/views/movies/_select_box.html.erb:12:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:271:in `render'
+/home/wilkersonj/NetBeansProjects/MediaSite/app/views/maintenance/index.html.erb:19:in `_run_erb_app47views47maintenance47index46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1329:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/wilkersonj/NetBeansProjects/MediaSite/app/views/movies/_select_box.html.erb:10: syntax error, unexpected kENSURE, expecting kEND
+/home/wilkersonj/NetBeansProjects/MediaSite/app/views/movies/_select_box.html.erb:12: syntax error, unexpected $end, expecting kEND) on line #10 of app/views/movies/_select_box.html.erb:
+7: </ul>
+8: </div>
+
+    app/views/movies/_select_box.html.erb:12:in `compile!'
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:50:04) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.5ms)
+  [4;36;1mMovie Load (67.9ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (69.9ms)
+Completed in 105ms (View: 31, DB: 70) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:50:08) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.4ms)
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (1.1ms)
+Completed in 31ms (View: 25, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:51:54) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (24.5ms)
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (1.0ms)
+Completed in 101ms (View: 95, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:53:22) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.9ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.3ms)
+Completed in 38ms (View: 31, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:55:16) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.4ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.3ms)
+Completed in 37ms (View: 31, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:55:19) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.5ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (1.1ms)
+Completed in 34ms (View: 26, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 08:56:15) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (22.2ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.4ms)
+Completed in 95ms (View: 89, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-07-22 09:01:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CmDXsR+UvMJfoJSrYRXAv2aeWT8CtotSzel8kfkqFdk=", "movie"=>{"title"=>"Crappy Movie", "description"=>"Just a test.", "year"=>"2301", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Create (0.6ms)[0m   [0mINSERT INTO `movies` (`updated_at`, `title`, `description`, `year`, `picture`, `created_at`, `last_played`, `location`) VALUES('2010-07-22 13:01:52', 'Crappy Movie', 'Just a test.', 2301, 'none', '2010-07-22 13:01:52', NULL, 'none')[0m
+  [4;36;1mSQL (25.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/1
+Completed in 399ms (DB: 28) | 302 Found [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-07-22 09:01:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (99.5ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 1) [0m
+Rendering template within layouts/main
+Rendering movies/show
+Completed in 141ms (View: 27, DB: 101) | 200 OK [http://localhost/movies/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-07-22 09:02:01) [GET]
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 18ms (View: 6, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:02:03) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::TemplateError (undefined method `name' for #<Movie:0xb7528570>) on line #6 of app/views/movies/_select_box.html.erb:
+3:   <%@movies = Movie.all%>
+4: 
+5:   <% @movies.each do |movie| %>
+6:     <li><%= check_box_tag 'movie_names[]', movie.name, select_movie?(movie) -%> </li>
+7:   <% end %>
+8: </ul>
+9: </div>
+
+    app/views/movies/_select_box.html.erb:6
+    app/views/movies/_select_box.html.erb:5:in `each'
+    app/views/movies/_select_box.html.erb:5
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:02:34) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.3ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::TemplateError (undefined method `select_movie?' for #<ActionView::Base:0xb70b07f4>) on line #6 of app/views/movies/_select_box.html.erb:
+3:   <%@movies = Movie.all%>
+4: 
+5:   <% @movies.each do |movie| %>
+6:     <li><%= check_box_tag 'movie_names[]', movie.id, select_movie?(movie) -%> </li>
+7:   <% end %>
+8: </ul>
+9: </div>
+
+    app/views/movies/_select_box.html.erb:6
+    app/views/movies/_select_box.html.erb:5:in `each'
+    app/views/movies/_select_box.html.erb:5
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (311.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:02:59) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.8ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::TemplateError (undefined method `select_movie?' for #<ActionView::Base:0xb7140a20>) on line #6 of app/views/movies/_select_box.html.erb:
+3:   <%@movies = Movie.all%>
+4: 
+5:   <% @movies.each do |movie| %>
+6:     <li><%= check_box_tag 'movie_names[]', movie.title, select_movie?(movie) -%> </li>
+7:   <% end %>
+8: </ul>
+9: </div>
+
+    app/views/movies/_select_box.html.erb:6
+    app/views/movies/_select_box.html.erb:5:in `each'
+    app/views/movies/_select_box.html.erb:5
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (162.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:03:22) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (3.1ms)
+Completed in 38ms (View: 32, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:17:43) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (3.2ms)
+Completed in 39ms (View: 32, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:23:30) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.8ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (3.1ms)
+Completed in 38ms (View: 32, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:25:53) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (21.8ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::TemplateError (undefined local variable or method `movie_names' for #<ActionView::Base:0xb733caf4>) on line #6 of app/views/movies/_select_box.html.erb:
+3:   <%@movies = Movie.all%>
+4: 
+5:   <% @movies.each do |movie| %>
+6:     <li><%= check_box_tag :id => movie_names[], :name => movie.title -%> </li>
+7:   <% end %>
+8: </ul>
+9: </div>
+
+    app/views/movies/_select_box.html.erb:6
+    app/views/movies/_select_box.html.erb:5:in `each'
+    app/views/movies/_select_box.html.erb:5
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (99.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:26:08) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.6ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::TemplateError (undefined local variable or method `movie_names' for #<ActionView::Base:0xb74e1134>) on line #6 of app/views/movies/_select_box.html.erb:
+3:   <%@movies = Movie.all%>
+4: 
+5:   <% @movies.each do |movie| %>
+6:     <li><%= check_box_tag :id => movie_names, :name => movie.title -%> </li>
+7:   <% end %>
+8: </ul>
+9: </div>
+
+    app/views/movies/_select_box.html.erb:6
+    app/views/movies/_select_box.html.erb:5:in `each'
+    app/views/movies/_select_box.html.erb:5
+    app/views/maintenance/index.html.erb:19
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:26:43) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (19.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (16.9ms)
+Completed in 51ms (View: 44, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:29:58) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (84.8ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (3.6ms)
+Completed in 103ms (View: 97, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:32:07) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (21.2ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (3.4ms)
+Completed in 40ms (View: 33, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#create (for 127.0.0.1 at 2010-07-22 09:57:08) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"CmDXsR+UvMJfoJSrYRXAv2aeWT8CtotSzel8kfkqFdk=", "movie"=>{"title"=>"Not a Movie", "description"=>"Just a test", "year"=>"3030", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Create (0.4ms)[0m   [0;1mINSERT INTO `movies` (`updated_at`, `title`, `description`, `year`, `picture`, `created_at`, `last_played`, `location`) VALUES('2010-07-22 13:57:08', 'Not a Movie', 'Just a test', 3030, 'none', '2010-07-22 13:57:08', NULL, 'none')[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/movies/2
+Completed in 22ms (DB: 4) | 302 Found [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-07-22 09:57:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMovie Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 2) [0m
+Rendering template within layouts/main
+Rendering movies/show
+Completed in 20ms (View: 6, DB: 3) | 200 OK [http://localhost/movies/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-07-22 09:57:10) [GET]
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 09:57:12) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (21.8ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.9ms)
+Completed in 91ms (View: 85, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-07-22 10:49:48) [GET]
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-07-22 10:49:50) [GET]
+  [4;36;1mShow Load (26.2ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 56ms (View: 9, DB: 26) | 200 OK [http://localhost/shows]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-07-22 10:49:50) [GET]
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 26ms (View: 6, DB: 1) | 200 OK [http://localhost/songs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 10:49:52) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.6ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.7ms)
+Completed in 33ms (View: 27, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-07-22 10:50:04) [GET]
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-07-22 10:50:08) [GET]
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 18ms (View: 7, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-07-22 10:50:09) [GET]
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 17ms (View: 6, DB: 1) | 200 OK [http://localhost/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 10:50:11) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.8ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.6ms)
+Completed in 34ms (View: 28, DB: 2) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-22 10:50:12) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-07-22 10:50:21) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.8ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.7ms)
+Completed in 34ms (View: 27, DB: 2) | 200 OK [http://localhost/maintenance]
