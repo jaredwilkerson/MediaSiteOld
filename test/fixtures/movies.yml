@@ -1,13 +1,103 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: MyString
-  year: 1
-  description: MyText
-  picture: MyString
+My Fake Movie:
+  title: My Fake Movie
+  year: 1993
+  description: A fake test movie
+  picture: none
 
-two:
-  title: MyString
-  year: 1
-  description: MyText
-  picture: MyString
+Test Movie:
+  title: Test Movie
+  year: 2031
+  description: A fake test movie
+  picture: none
+
+Testing Me:
+  title: Testing Me
+  year: 2031
+  description: A fake test movie
+  picture: none
+
+Testing:
+  title: Testing
+  year: 3030
+  description: A fake test movie
+  picture: none
+
+The Fake One:
+  title: The Fake One
+  year: 2000
+  description: A fake test movie
+  picture: none
+
+Faking It:
+  title: Faking It
+  year: 2003
+  description: A fake test movie
+  picture: none
+
+The Hard Test:
+  title: The Hard Test
+  year: 2007
+  description: A fake test movie
+  picture: none
+
+I Need A Good Test:
+  title: I Need A Good Test
+  year: 1986
+  description: A fake test movie
+  picture: none
+
+A Blind Test:
+  title: A Blind Test
+  year: 1990
+  description: A fake test movie
+  picture: none
+
+Testing Me:
+  title: Testing Me
+  year: 2999
+  description: A fake test movie
+  picture: none
+
+To Test Or Not Test:
+  title: To Test Or Not Test
+  year: 1786
+  description: A fake test movie
+  picture: none
+
+A Quick Guide To Testing:
+  title: A Quick Guide To Testing
+  year: 2005
+  description: A fake test movie
+  picture: none
+
+The Secrets of Faking:
+  title: The Secrets of Faking
+  year: 2041
+  description: A fake test movie
+  picture: none
+
+Testing for Dummies:
+  title: Testing for Dummies
+  year: 2006
+  description: A fake test movie
+  picture: none
+
+Fake:
+  title: Fake
+  year: 2001
+  description: A fake test movie
+  picture: none
+
+The Test:
+  title: The Test
+  year: 2006
+  description: A fake test movie
+  picture: none
+
+Quick Test:
+  title: Quick Test
+  year: 2000
+  description: A fake test movie
+  picture: none

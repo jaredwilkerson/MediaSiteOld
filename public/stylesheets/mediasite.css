@@ -32,6 +32,11 @@ root {
         font-size:large;
       }
 
+      ul
+      {
+        padding-left:0px;
+      }
+
       textarea
       {
         resize: none;
@@ -176,7 +181,7 @@ root {
         padding-right:4px;
         /*background:black;*/
         width:743px;
-        height:900px;
+        height:932px;
         font-size:small;
         -webkit-border-bottom-left-radius: 8px;
         -webkit-border-bottom-right-radius: 8px;
@@ -190,20 +195,20 @@ root {
       {
         border-bottom:1px solid grey;
         width:743px;
-        height:300px;
+        height:310px;
       }
 
       div.maintenance-show
       {
         border-bottom:1px solid grey;
         width:743px;
-        height:300px;
+        height:310px;
       }
 
       div.maintenance-song
       {        
         width:743px;;
-        height:300px;
+        height:310px;
       }
 
       div.new-entry
@@ -217,6 +222,13 @@ root {
       {
         width:371px;
         height:300px;
+        float:left;
+      }
+      div.select-box
+      {
+        width:371px;
+        height:275px;
+        margin-bottom:5px;
         float:left;
         overflow:auto;
       }

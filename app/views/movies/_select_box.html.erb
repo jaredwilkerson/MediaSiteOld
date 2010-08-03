@@ -1,4 +1,5 @@
-<div class="select-entry">  
+<div class="select-entry">
+<div class="select-box">
 <ul style="list-style-type: none">
   <%@movies = Movie.all%>
 
@@ -9,4 +10,9 @@
     </li>
   <% end %>
 </ul>
+</div>
+<p>
+        <%= submit_tag 'Edit' %>
+        <%= submit_tag 'Delete' %>
+</p>
 </div>
