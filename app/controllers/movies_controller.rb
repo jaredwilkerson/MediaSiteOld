@@ -35,8 +35,13 @@ class MoviesController < ApplicationController
   end
 
   # GET /movies/1/edit
-  def edit
-    @movie = Movie.find(params[:id])
+  def edit 
+
+    respond_to do |format|
+      format.html # edit.html.erb
+      format.xml  { render :xml => @movie }
+    end
+
   end
 
   # POST /movies
@@ -84,4 +89,31 @@ class MoviesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def update_list
+    @output = " "
+    params[:movie_names].each do |name|
+      @output+= name
+    end
+
+    @names = params[:movie_names]
+    @movies = Array.new
+    @names.each do |name|
+      @movies[name] = Movie.find(:all, :conditions => { :title => name })
+    end
+
+    respond_to do |format|
+     
+      if 'edit' == params[:submit]
+        #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
+        format.html{ render "edit", :movies => @movies}
+         flash[:notice] = @output;
+      elsif 'delete' == params[:submit]
+        #destroy
+      else
+        flash[:notice] = 'Incorrect method submitted'
+      end
+    end
+  end
+  
 end

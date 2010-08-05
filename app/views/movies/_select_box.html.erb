@@ -1,18 +1,27 @@
 <div class="select-entry">
 <div class="select-box">
-<ul style="list-style-type: none">
-  <%@movies = Movie.all%>
+<% form_tag(:controller => 'movies', :action => 'update_list', :method => 'post' ) do %>
 
-  <% @movies.each do |movie| %>
-    <li>
-      <%= check_box_tag 'movie_names[]', movie.title -%>
-      <%= h movie.title  %>
-    </li>
-  <% end %>
-</ul>
+
+ 
+    <ul style="list-style-type: none">
+      <%@movies = Movie.all%>
+
+      <% @movies.each do |movie| %>
+        <li>
+          <%= check_box_tag 'movie_names[]', movie.title -%>
+          <%= h movie.title  %>
+        </li>
+      <% end %>
+    </ul>
 </div>
-<p>
-        <%= submit_tag 'Edit' %>
-        <%= submit_tag 'Delete' %>
-</p>
+  <p>
+          <%= submit_tag 'Edit' , {:name => 'submit', :value => 'edit'} %>
+          <%= submit_tag 'Delete', {:name => 'submit', :value => 'delete'} %>
+  </p>
+<% end %>
 </div>
+
+
+
+
