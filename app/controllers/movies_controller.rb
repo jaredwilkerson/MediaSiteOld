@@ -99,7 +99,7 @@ class MoviesController < ApplicationController
     @names = params[:movie_names]
     @movies = Array.new
     @names.each do |name|
-      @movies[name] = Movie.find(:all, :conditions => { :title => name })
+      @movies << Movie.find(:all, :conditions => { :title => name })
     end
 
     respond_to do |format|
