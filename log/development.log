@@ -9868,3 +9868,404 @@ Rendering template within layouts/main
 Rendering movies/edit
   [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
 Completed in 14ms (View: 8, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:23:05) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-05 21:23:06) [GET]
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 6ms (View: 2, DB: 2) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-05 21:23:06) [GET]
+  [4;35;1mShow Load (0.2ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-08-05 21:23:07) [GET]
+  [4;36;1mSong Load (0.2ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:23:08) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-05 21:43:53) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (8.8ms)
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (1.8ms)
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:43:57) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/main
+Rendering movies/edit
+  [4;36;1mMovie Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 48ms (View: 39, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:48:43) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/main
+Rendering movies/edit
+ERROR: compiling _run_erb_app47views47movies47edit46html46erb RAISED compile error
+/home/lyrch/NetBeansProjects/MediaSite/app/views/movies/edit.html.erb:13: syntax error, unexpected ':', expecting kEND
+ content_for : ; @output_buffer.concat "\n"
+              ^
+Function body:           def _run_erb_app47views47movies47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!movie edit>\n"
+ content_for :header_links do ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("configuration-ns.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" ).to_s); @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ content_for :content_links do ; @output_buffer.concat "\n"
+@output_buffer.concat "          <div class=\"selected-content-link\">"; @output_buffer.concat(( link_to 'Movies', movies_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Shows', shows_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Music', songs_path ).to_s); @output_buffer.concat "</div><!this is just a placeholder till I make the music stuff>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ content_for : ; @output_buffer.concat "\n"
+@output_buffer.concat "<h1>Editing movie</h1>\n"
+@output_buffer.concat "\n"
+@movies.each do |movie|; @output_buffer.concat "\n"
+@output_buffer.concat "  ";  form_for(movie) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "    <p>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    </p>\n"
+@output_buffer.concat "    <p>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.label :year ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.text_field :year ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    </p>\n"
+@output_buffer.concat "    <p>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.text_area :description ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    </p>\n"
+@output_buffer.concat "    <p>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.label :picture ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.text_field :picture ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    </p>\n"
+@output_buffer.concat "    <p>\n"
+@output_buffer.concat "      "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    </p>\n"
+@output_buffer.concat "  ";  end ; @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Show', @movie ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat(( link_to 'Back', movies_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/lyrch/NetBeansProjects/MediaSite/app/views/movies/edit.html.erb:45:in `compile!'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/lyrch/NetBeansProjects/MediaSite/app/controllers/movies_controller.rb:109:in `update_list'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/lyrch/NetBeansProjects/MediaSite/app/controllers/movies_controller.rb:105:in `update_list'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/home/lyrch/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/lyrch/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/home/lyrch/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/lyrch/NetBeansProjects/MediaSite/app/views/movies/edit.html.erb:13: syntax error, unexpected ':', expecting kEND
+ content_for : ; @output_buffer.concat "\n"
+              ^) on line #13 of app/views/movies/edit.html.erb:
+10:           <div class="content-link"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
+11: <% end %>
+12: 
+13: <% content_for : %>
+14: <h1>Editing movie</h1>
+15: 
+16: <%@movies.each do |movie|%>
+
+    app/views/movies/edit.html.erb:45:in `compile!'
+    app/controllers/movies_controller.rb:109:in `update_list'
+    app/controllers/movies_controller.rb:105:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:50:18) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/main
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 43ms (View: 38, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:52:19) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:56:21) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 21:57:24) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 22:00:04) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 43ms (View: 10, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 22:00:32) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.1ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.4ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-05 22:01:17) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"dsDeq3EdbI4RO69ik4X39T/0BLbS5YxIAt9zjvzXjSA=", "method"=>"post", "movie_names"=>["Faking It", "Fake", "The Fake One"]}
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Fake One') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.5ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.0.154 at 2010-08-06 07:51:12) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.0.129/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 192.168.0.154 at 2010-08-06 07:51:39) [GET]
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://192.168.0.129/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 192.168.0.154 at 2010-08-06 07:51:40) [GET]
+  [4;35;1mShow Load (0.2ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://192.168.0.129/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 192.168.0.154 at 2010-08-06 07:51:42) [GET]
+  [4;36;1mSong Load (0.2ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://192.168.0.129/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 192.168.0.154 at 2010-08-06 07:51:43) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (0.6ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (9.3ms)
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (2.4ms)
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://192.168.0.129/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 192.168.0.154 at 2010-08-06 07:51:50) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"7uZ5LjA4X6+rbiZFOGmpr6/FSbjMUqkKWIbLanTLlWc=", "method"=>"post", "movie_names"=>["A Quick Guide To Testing", "Faking It", "Testing Me", "The Test"]}
+  [4;35;1mMovie Load (0.6ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Quick Guide To Testing') [0m
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+  [4;35;1mMovie Load (0.2ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Testing Me') [0m
+  [4;36;1mMovie Load (0.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Test') [0m
+Rendering template within layouts/movies
+Rendering movies/edit
+  [4;35;1mMovie Columns (0.7ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 21ms (View: 11, DB: 2) | 200 OK [http://192.168.0.129/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 192.168.0.154 at 2010-08-06 07:52:05) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://192.168.0.129/]

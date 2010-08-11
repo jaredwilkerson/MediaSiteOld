@@ -106,7 +106,7 @@ class MoviesController < ApplicationController
      
       if 'edit' == params[:submit]
         #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
-        format.html{ render "edit", :movies => @movies}
+        format.html{ render "edit", :movies => @movies, :layout => 'movies'}
          flash[:notice] = @output;
       elsif 'delete' == params[:submit]
         #destroy
