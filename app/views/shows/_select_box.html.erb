@@ -1,0 +1,27 @@
+<div class="select-entry">
+<div class="select-box">
+<% form_tag(:controller => 'shows', :action => 'update_list', :method => 'post' ) do %>
+
+
+ 
+    <ul style="list-style-type: none">
+      <%@shows = Show.all%>
+
+      <% @shows.each do |show| %>
+        <li>
+          <%= check_box_tag 'show_names[]', show.title -%>
+          <%= h show.title  %>
+        </li>
+      <% end %>
+    </ul>
+</div>
+  <p>
+          <%= submit_tag 'Edit' , {:name => 'submit', :value => 'edit'} %>
+          <%= submit_tag 'Delete', {:name => 'submit', :value => 'delete'} %>
+  </p>
+<% end %>
+</div>
+
+
+
+

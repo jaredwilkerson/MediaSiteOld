@@ -81,13 +81,15 @@ class MoviesController < ApplicationController
   # DELETE /movies/1
   # DELETE /movies/1.xml
   def destroy
-    @movie = Movie.find(params[:id])
-    @movie.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(movies_url) }
-      format.xml  { head :ok }
+    @movies.each do |movie|
+    #@movie = Movie.find(params[:id])
+      movie.destroy
     end
+
+   # respond_to do |format|
+      
+   #   format.xml  { head :ok }
+   # end
   end
 
   def update_list
@@ -106,10 +108,12 @@ class MoviesController < ApplicationController
      
       if 'edit' == params[:submit]
         #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
-        format.html{ render "edit", :movies => @movies, :layout => 'movies'}
+        format.html{ render "edit", :movies => @movies, :layout => 'maintenance'}
          flash[:notice] = @output;
       elsif 'delete' == params[:submit]
         #destroy
+         Movie.destroy(@movies)
+         format.html { render 'maintenance/index' }
       else
         flash[:notice] = 'Incorrect method submitted'
       end
