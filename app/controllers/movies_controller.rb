@@ -113,7 +113,7 @@ class MoviesController < ApplicationController
       elsif 'delete' == params[:submit]
         #destroy
          Movie.destroy(@movies)
-         format.html { render 'maintenance/index' }
+         format.html { render 'maintenance/index', :layout => 'maintenance' }
       else
         flash[:notice] = 'Incorrect method submitted'
       end
