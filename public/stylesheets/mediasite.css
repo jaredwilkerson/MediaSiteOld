@@ -196,23 +196,16 @@ root {
         border-bottom:1px solid grey;
         width:743px;
         height:310px;
-      }
+      }      
 
-      div.movie-maintenance-edit
+      div.show-maintenance
       {
         border-bottom:1px solid grey;
         width:743px;
         height:310px;
       }
 
-      div.maintenance-show
-      {
-        border-bottom:1px solid grey;
-        width:743px;
-        height:310px;
-      }
-
-      div.maintenance-song
+      div.song-maintenance
       {        
         width:743px;;
         height:310px;
