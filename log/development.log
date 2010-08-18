@@ -11381,3 +11381,64 @@ Rendered shows/_new (45.3ms)
   [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
 Rendered shows/_select_box (2.4ms)
 Completed in 110ms (View: 104, DB: 3) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (59.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-18 14:29:43) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["MyString"]}
+  [4;36;1mMovie Load (195.6ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering shows/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/shows/edit.html.erb:
+1: <h1>Editing show</h1>
+2: 
+3: <% form_for(@show) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/shows/edit.html.erb:3
+    app/controllers/shows_controller.rb:108:in `update_list'
+    app/controllers/shows_controller.rb:104:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.7ms)
+Rendered rescues/_request_and_response (35.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-18 14:29:56) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["MyString", "MyString"]}
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'MyString') [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'MyString') [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Movie without an ID):
+  app/controllers/shows_controller.rb:112:in `update_list'
+  app/controllers/shows_controller.rb:104:in `update_list'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (260.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (not_found)

@@ -76,6 +76,10 @@ class ShowsController < ApplicationController
   # DELETE /shows/1
   # DELETE /shows/1.xml
   def destroy
+    @shows.each do |show|
+      #@show = Show.find(params[:id])
+      @show.destroy
+    end
     @show = Show.find(params[:id])
     @show.destroy
 
@@ -84,4 +88,33 @@ class ShowsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def update_list
+    @output = " "
+    params[:show_names].each do |name|
+      @output+= name
+    end
+
+    @names = params[:show_names]
+    @showss = Array.new
+    @names.each do |name|
+      @showss << Movie.find(:all, :conditions => { :title => name })
+    end
+
+    respond_to do |format|
+
+      if 'edit' == params[:submit]
+        #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
+        format.html{ render "edit", :shows => @shows, :layout => 'maintenance'}
+         flash[:notice] = @output;
+      elsif 'delete' == params[:submit]
+        #destroy
+         Movie.destroy(@shows)
+         format.html { render 'maintenance/index', :layout => 'maintenance' }
+      else
+        flash[:notice] = 'Incorrect method submitted'
+      end
+    end
+  end
+
 end
