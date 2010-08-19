@@ -116,7 +116,7 @@ class ShowsController < ApplicationController
          Show.destroy(@shows)
          format.html { render 'maintenance/index', :layout => 'maintenance' }
       else
-        flash[:notice] = 'Incorrect method submitted'
+        flash[:notice] = 'Entries must be selected to update'
         format.html { render 'maintenance/index', :layout => 'maintenance' }
       end
     end

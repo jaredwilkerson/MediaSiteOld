@@ -1,44 +1,59 @@
-<h1>Editing song</h1>
+<!show edit>
+<div class="header">
+  <%= link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" %>
+  <%= link_to image_tag("configuration.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" %>
+</div><!this is the header row>
+  <div class="content-row">
+    <div class="col-wrapper">
+      <!-- <div class="left-col"></div><!this is the left column> -->
+      <div class="middle-col"><!the middle column with all the "stuff">
+        <div class="content-links"><!the first row with links to the content pages>
+          <div class="content-link"><%= link_to 'Movies', movies_path %></div>
+          <div class="content-link"><%= link_to 'Shows', shows_path %></div>
+          <div class="content-link"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
+        </div>
+        <div class="maintenance-window"><!the second row containing the maintenance window>
 
-<% form_for(@song) do |f| %>
-  <%= f.error_messages %>
+            <h1>Editing movie</h1>
 
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :genre %><br />
-    <%= f.text_field :genre %>
-  </p>
-  <p>
-    <%= f.label :artist %><br />
-    <%= f.text_field :artist %>
-  </p>
-  <p>
-    <%= f.label :album %><br />
-    <%= f.text_field :album %>
-  </p>
-  <p>
-    <%= f.label :year %><br />
-    <%= f.text_field :year %>
-  </p>
-  <p>
-    <%= f.label :picture %><br />
-    <%= f.text_field :picture %>
-  </p>
-  <p>
-    <%= f.label :play_count %><br />
-    <%= f.text_field :play_count %>
-  </p>
-  <p>
-    <%= f.label :last_played %><br />
-    <%= f.datetime_select :last_played %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+            <%@songs.each do |song|%>
 
-<%= link_to 'Show', @song %> |
-<%= link_to 'Back', songs_path %>
+              <% form_for(song) do |f| %>
+                <%= f.error_messages %>
+
+                <p>
+                  <%= f.label :title %>
+                  <%= f.text_field :title, :size => 15%>
+
+                  <%= f.label :year %>
+                  <%= f.text_field :year, :size => 5%>
+                </p>
+                <p>
+                  <%= f.label :genre %>
+                  <%= f.text_field :genre, :size => 15%>
+                </p>
+                <p>
+                  <%= f.label :picture %>
+                  <%= f.text_field :picture, :size=>20 %>
+                </p>
+                <p>
+                  <%= f.label :location %>
+                  <%= f.text_field :location, :size=>20 %>
+                </p>
+
+                <p>
+                  <%= f.submit 'Update' %>
+                </p>
+              <% end %>
+
+            <%end%>
+            <%= link_to 'Show', @movie %> |
+            <%= link_to 'Back', movies_path %>
+
+
+        </div>
+      </div>
+      <!--<div class="right-col"></div><!this is the right column> -->
+    </div>
+  </div>
+<div class="footer"></div><!this is the footer>

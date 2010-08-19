@@ -106,16 +106,17 @@ class MoviesController < ApplicationController
 
     respond_to do |format|
      
-      if 'edit' == params[:submit]
+      if ('edit' == params[:submit]) && (false == @movies.empty?)
         #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
         format.html{ render "edit", :movies => @movies, :layout => 'maintenance'}
          flash[:notice] = @output;
-      elsif 'delete' == params[:submit]
+      elsif ('delete' == params[:submit]) && (false == @movies.empty?)
         #destroy
          Movie.destroy(@movies)
          format.html { render 'maintenance/index', :layout => 'maintenance' }
       else
         flash[:notice] = 'Incorrect method submitted'
+        format.html { render 'maintenance/index', :layout => 'maintenance' }
       end
     end
   end

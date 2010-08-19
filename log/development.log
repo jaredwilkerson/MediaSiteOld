@@ -11929,3 +11929,1430 @@ Rendered shows/_new (12.1ms)
   [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
 Rendered shows/_select_box (2.6ms)
 Completed in 42ms (View: 36, DB: 3) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:30:00) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+
+ActionView::MissingTemplate (Missing template shows/update_list.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:30:12) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+
+ActionView::MissingTemplate (Missing template shows/update_list.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:31:29) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+
+ActionView::MissingTemplate (Missing template shows/update_list.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:32:37) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.call):
+  app/controllers/shows_controller.rb:109:in `update_list'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:33:16) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (15.2ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.9ms)
+  [4;35;1mShow Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.8ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (3.0ms)
+Completed in 46ms (View: 38, DB: 3) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:33:53) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.9ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.3ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+Completed in 44ms (View: 36, DB: 3) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:33:58) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (13.9ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+Completed in 42ms (View: 35, DB: 3) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 08:34:04) [POST]
+  Parameters: {"submit"=>"delete", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (13.6ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;36;1mShow Load (0.3ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.6ms)
+Completed in 43ms (View: 34, DB: 3) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-19 08:34:06) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 08:34:07) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (15.3ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (5.1ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (13.0ms)
+  [4;36;1mShow Load (50.6ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (53.1ms)
+Completed in 95ms (View: 38, DB: 53) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 09:46:35) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.0ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;35;1mShow Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.2ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+Completed in 52ms (View: 46, DB: 3) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 09:46:59) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.2ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;35;1mShow Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.9ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;35;1mSong Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+
+ActionView::TemplateError (undefined local variable or method `song' for #<ActionView::Base:0xb75285e8>) on line #7 of app/views/songs/_new.html.erb:
+4: 
+5:     <%@song = Song.new%>
+6: 
+7:     <% form_for(song) do |f| %>
+8:       <%= f.error_messages %>
+9: 
+10:       <p>
+
+    app/views/songs/_new.html.erb:7
+    app/views/maintenance/index.html.erb:26
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 09:48:12) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (13.7ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;36;1mShow Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (11.9ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.6ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (16.2ms)
+  [4;35;1mSong Load (0.5ms)[0m   [0mSELECT * FROM `songs` [0m
+
+ActionView::TemplateError (undefined local variable or method `song' for #<ActionView::Base:0xb752b554>) on line #12 of app/views/songs/_select_box.html.erb:
+9: 
+10:       <% @songs.each do |movie| %>
+11:         <li>
+12:           <%= check_box_tag 'song_names[]', song.title -%>
+13:           <%= h song.title  %>
+14:         </li>
+15:       <% end %>
+
+    app/views/songs/_select_box.html.erb:12
+    app/views/songs/_select_box.html.erb:10:in `each'
+    app/views/songs/_select_box.html.erb:10
+    app/views/songs/_select_box.html.erb:3
+    app/views/maintenance/index.html.erb:27
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 09:48:40) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.0ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;36;1mShow Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.6ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.7ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (4.5ms)
+Completed in 64ms (View: 56, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 09:49:45) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.2ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.2ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.6ms)
+  [4;36;1mSong Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.9ms)
+  [4;35;1mSong Load (0.3ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.3ms)
+Completed in 66ms (View: 59, DB: 4) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 11:50:47) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["So Fake"]}
+  [4;36;1mShow Load (0.5ms)[0m   [0;1mSELECT * FROM `shows` WHERE (`shows`.`title` = 'So Fake') [0m
+Rendering template within layouts/maintenance
+Rendering shows/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #3 of app/views/shows/edit.html.erb:
+1: <h1>Editing show</h1>
+2: 
+3: <% form_for(@show) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/shows/edit.html.erb:3
+    app/controllers/shows_controller.rb:112:in `update_list'
+    app/controllers/shows_controller.rb:108:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (155.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-19 11:51:33) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "movie_names"=>["Test Movie"]}
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Test Movie') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-19 11:51:36) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 11:51:39) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (13.8ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.8ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 59ms (View: 51, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-19 11:51:51) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "movie_names"=>["The Secrets of Faking", "A Blind Test", "A Quick Guide To Testing", "I Need A Good Test", "Faking It"]}
+  [4;36;1mMovie Load (0.6ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Secrets of Faking') [0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Blind Test') [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Quick Guide To Testing') [0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'I Need A Good Test') [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 39ms (View: 24, DB: 3) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 11:59:26) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["So Fake", "Fake"]}
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` WHERE (`shows`.`title` = 'So Fake') [0m
+  [4;35;1mShow Load (0.2ms)[0m   [0mSELECT * FROM `shows` WHERE (`shows`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering shows/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #21 of app/views/shows/edit.html.erb:
+18: 
+19:             <%@shows.each do |show|%>
+20:               <div class="show-maintenance-edit">
+21:                <% form_for(@show) do |f| %>
+22:                 <%= f.error_messages %>
+23: 
+24:                 <p>
+
+    app/views/shows/edit.html.erb:21
+    app/views/shows/edit.html.erb:19:in `each'
+    app/views/shows/edit.html.erb:19
+    app/controllers/shows_controller.rb:112:in `update_list'
+    app/controllers/shows_controller.rb:108:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 11:59:54) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["So Fake", "Fake"]}
+  [4;36;1mShow Load (0.5ms)[0m   [0;1mSELECT * FROM `shows` WHERE (`shows`.`title` = 'So Fake') [0m
+  [4;35;1mShow Load (0.2ms)[0m   [0mSELECT * FROM `shows` WHERE (`shows`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering shows/edit
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Completed in 91ms (View: 79, DB: 2) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-19 11:59:57) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 16ms (View: 5, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 11:59:59) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.1ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.2ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.8ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 59ms (View: 51, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-19 12:01:52) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.3ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.8ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 59ms (View: 51, DB: 4) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:01:56) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+ERROR: compiling _run_erb_app47views47songs47edit46html46erb RAISED compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47songs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!show edit>\n"
+@output_buffer.concat "<div class=\"header\">\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("configuration.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</div><!this is the header row>\n"
+@output_buffer.concat "  <div class=\"content-row\">\n"
+@output_buffer.concat "    <div class=\"col-wrapper\">\n"
+@output_buffer.concat "      <!-- <div class=\"left-col\"></div><!this is the left column> -->\n"
+@output_buffer.concat "      <div class=\"middle-col\"><!the middle column with all the \"stuff\">\n"
+@output_buffer.concat "        <div class=\"content-links\"><!the first row with links to the content pages>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Movies', movies_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Shows', shows_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Music', songs_path ).to_s); @output_buffer.concat "</div><!this is just a placeholder till I make the music stuff>\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "        <div class=\"maintenance-window\"><!the second row containing the maintenance window>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            <h1>Editing movie</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            ";  form_for(@song) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "              "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :title, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :year ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :year, :size => 5).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :genre ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :genre, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :picture ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :picture, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :location ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :location, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "              </div>\n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Show', @movie ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Back', movies_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <!--<div class=\"right-col\"></div><!this is the right column> -->\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "<div class=\"footer\"></div><!this is the footer>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:104:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:100:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end) on line #58 of app/views/songs/edit.html.erb:
+55:     </div>
+56:   </div>
+57: <div class="footer"></div><!this is the footer>
+
+    app/views/songs/edit.html.erb:58:in `compile!'
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (99.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:02:33) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;35;1mSong Load (0.5ms)[0m   [0mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+ERROR: compiling _run_erb_app47views47songs47edit46html46erb RAISED compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47songs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!show edit>\n"
+@output_buffer.concat "<div class=\"header\">\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("configuration.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</div><!this is the header row>\n"
+@output_buffer.concat "  <div class=\"content-row\">\n"
+@output_buffer.concat "    <div class=\"col-wrapper\">\n"
+@output_buffer.concat "      <!-- <div class=\"left-col\"></div><!this is the left column> -->\n"
+@output_buffer.concat "      <div class=\"middle-col\"><!the middle column with all the \"stuff\">\n"
+@output_buffer.concat "        <div class=\"content-links\"><!the first row with links to the content pages>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Movies', movies_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Shows', shows_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Music', songs_path ).to_s); @output_buffer.concat "</div><!this is just a placeholder till I make the music stuff>\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "        <div class=\"maintenance-window\"><!the second row containing the maintenance window>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            <h1>Editing movie</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            ";  form_for(@song) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "              "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :title, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :year ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :year, :size => 5).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :genre ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :genre, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :picture ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :picture, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :location ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :location, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "              \n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Show', @movie ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Back', movies_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <!--<div class=\"right-col\"></div><!this is the right column> -->\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "<div class=\"footer\"></div><!this is the footer>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:104:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:100:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end) on line #58 of app/views/songs/edit.html.erb:
+55:     </div>
+56:   </div>
+57: <div class="footer"></div><!this is the footer>
+
+    app/views/songs/edit.html.erb:58:in `compile!'
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (150.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:02:42) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;36;1mSong Load (0.5ms)[0m   [0;1mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+ERROR: compiling _run_erb_app47views47songs47edit46html46erb RAISED compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47songs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!show edit>\n"
+@output_buffer.concat "<div class=\"header\">\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("configuration.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</div><!this is the header row>\n"
+@output_buffer.concat "  <div class=\"content-row\">\n"
+@output_buffer.concat "    <div class=\"col-wrapper\">\n"
+@output_buffer.concat "      <!-- <div class=\"left-col\"></div><!this is the left column> -->\n"
+@output_buffer.concat "      <div class=\"middle-col\"><!the middle column with all the \"stuff\">\n"
+@output_buffer.concat "        <div class=\"content-links\"><!the first row with links to the content pages>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Movies', movies_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Shows', shows_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Music', songs_path ).to_s); @output_buffer.concat "</div><!this is just a placeholder till I make the music stuff>\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "        <div class=\"maintenance-window\"><!the second row containing the maintenance window>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            <h1>Editing movie</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            ";  form_for(@song) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "              "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :title, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :year ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :year, :size => 5).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :genre ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :genre, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :picture ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :picture, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :location ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :location, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "              \n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Show', @movie ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Back', movies_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <!--<div class=\"right-col\"></div><!this is the right column> -->\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "<div class=\"footer\"></div><!this is the footer>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:104:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:100:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:58: syntax error, unexpected kENSURE, expecting $end) on line #58 of app/views/songs/edit.html.erb:
+55:     </div>
+56:   </div>
+57: <div class="footer"></div><!this is the footer>
+
+    app/views/songs/edit.html.erb:58:in `compile!'
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (87.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:04:17) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #19 of app/views/songs/edit.html.erb:
+16: 
+17:             <h1>Editing movie</h1>
+18: 
+19:             <% form_for(@song) do |f| %>
+20:               <%= f.error_messages %>
+21: 
+22:               <p>
+
+    app/views/songs/edit.html.erb:19
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:04:46) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;36;1mSong Load (0.5ms)[0m   [0;1mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+  [4;35;1mSong Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+
+ActionView::TemplateError (undefined local variable or method `song' for #<ActionView::Base:0xb740b69c>) on line #19 of app/views/songs/edit.html.erb:
+16: 
+17:             <h1>Editing movie</h1>
+18: 
+19:             <% form_for(song) do |f| %>
+20:               <%= f.error_messages %>
+21: 
+22:               <p>
+
+    app/views/songs/edit.html.erb:19
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:05:34) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;36;1mSong Load (0.5ms)[0m   [0;1mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+ERROR: compiling _run_erb_app47views47songs47edit46html46erb RAISED compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:59: syntax error, unexpected kENSURE, expecting kEND
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:61: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47songs47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!show edit>\n"
+@output_buffer.concat "<div class=\"header\">\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("home-ns.jpg", :border => 0, :title => "home"), :controller => "home", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to image_tag("configuration.jpg", :border => 0, :title => "maintenance"), :controller => "maintenance", :action => "index" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "</div><!this is the header row>\n"
+@output_buffer.concat "  <div class=\"content-row\">\n"
+@output_buffer.concat "    <div class=\"col-wrapper\">\n"
+@output_buffer.concat "      <!-- <div class=\"left-col\"></div><!this is the left column> -->\n"
+@output_buffer.concat "      <div class=\"middle-col\"><!the middle column with all the \"stuff\">\n"
+@output_buffer.concat "        <div class=\"content-links\"><!the first row with links to the content pages>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Movies', movies_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Shows', shows_path ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "          <div class=\"content-link\">"; @output_buffer.concat(( link_to 'Music', songs_path ).to_s); @output_buffer.concat "</div><!this is just a placeholder till I make the music stuff>\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "        <div class=\"maintenance-window\"><!the second row containing the maintenance window>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            <h1>Editing movie</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            "; @songs.each do |song|; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "            ";  form_for(song) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "              "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :title, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :year ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :year, :size => 5).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :genre ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :genre, :size => 15).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :picture ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :picture, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.label :location ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.text_field :location, :size=>20 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "              <p>\n"
+@output_buffer.concat "                "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "              </p>\n"
+@output_buffer.concat "            ";  end ; @output_buffer.concat "\n"
+@output_buffer.concat "              \n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Show', @movie ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat "            "; @output_buffer.concat(( link_to 'Back', movies_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "        </div>\n"
+@output_buffer.concat "      </div>\n"
+@output_buffer.concat "      <!--<div class=\"right-col\"></div><!this is the right column> -->\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "  </div>\n"
+@output_buffer.concat "<div class=\"footer\"></div><!this is the footer>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:61:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:104:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/wilkersonj/MediaSite/app/controllers/songs_controller.rb:100:in `update_list'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:59: syntax error, unexpected kENSURE, expecting kEND
+/home/wilkersonj/MediaSite/app/views/songs/edit.html.erb:61: syntax error, unexpected $end, expecting kEND) on line #59 of app/views/songs/edit.html.erb:
+56:     </div>
+57:   </div>
+58: <div class="footer"></div><!this is the footer>
+
+    app/views/songs/edit.html.erb:61:in `compile!'
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (152.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#update_list (for 127.0.0.1 at 2010-08-19 12:06:02) [POST]
+  Parameters: {"song_names"=>["MyString"], "submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post"}
+  [4;35;1mSong Load (0.5ms)[0m   [0mSELECT * FROM `songs` WHERE (`songs`.`title` = 'MyString') [0m
+Rendering template within layouts/maintenance
+Rendering songs/edit
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+
+ActionView::TemplateError (undefined method `song_song_path' for #<ActionView::Base:0xb7114e34>) on line #21 of app/views/songs/edit.html.erb:
+18: 
+19:             <%@songs.each do |song|%>
+20: 
+21:             <% form_for(song) do |f| %>
+22:               <%= f.error_messages %>
+23: 
+24:               <p>
+
+    app/views/songs/edit.html.erb:21
+    app/views/songs/edit.html.erb:19:in `each'
+    app/views/songs/edit.html.erb:19
+    app/controllers/songs_controller.rb:104:in `update_list'
+    app/controllers/songs_controller.rb:100:in `update_list'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (164.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#update_list (for 127.0.0.1 at 2010-08-19 13:03:35) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "show_names"=>["Fake"]}
+  [4;35;1mShow Load (0.5ms)[0m   [0mSELECT * FROM `shows` WHERE (`shows`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering shows/edit
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Completed in 22ms (View: 10, DB: 2) | 200 OK [http://localhost/shows/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-19 13:03:45) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "movie_names"=>["A Quick Guide To Testing"]}
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Quick Guide To Testing') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-19 13:03:49) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "id"=>"181603456", "movie"=>{"title"=>"A Quick Guide To Testing", "description"=>"A fake test movie", "year"=>"2005", "picture"=>"none", "location"=>""}}
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (30.2ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 181603456) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (42.9ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'A Quick Guide To Testing' AND `movies`.year = 2005 AND `movies`.id <> 181603456) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/main
+Rendering movies/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #18 of app/views/movies/edit.html.erb:
+15:           
+16:             <h1>Editing movie</h1>
+17: 
+18:             <%@movies.each do |movie|%>
+19:               <div class="movie-maintenance-edit">
+20:               <% form_for(movie) do |f| %>
+21:                 <%= f.error_messages %>
+
+    app/views/movies/edit.html.erb:18
+    app/controllers/movies_controller.rb:75:in `update'
+    app/controllers/movies_controller.rb:69:in `update'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (152.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-08-19 13:05:11) [GET]
+  Parameters: {"id"=>"update_list"}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with ID=update_list):
+  app/controllers/movies_controller.rb:18:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)

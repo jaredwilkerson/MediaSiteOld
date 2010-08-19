@@ -1,0 +1,27 @@
+<div class="select-entry">
+<div class="select-box">
+<% form_tag(:controller => 'songs', :action => 'update_list', :method => 'post' ) do %>
+
+
+ 
+    <ul style="list-style-type: none">
+      <%@songs = Song.all%>
+
+      <% @songs.each do |song| %>
+        <li>
+          <%= check_box_tag 'song_names[]', song.title -%>
+          <%= h song.title  %>
+        </li>
+      <% end %>
+    </ul>
+</div>
+  <p>
+          <%= submit_tag 'Edit' , {:name => 'submit', :value => 'edit'} %>
+          <%= submit_tag 'Delete', {:name => 'submit', :value => 'delete'} %>
+  </p>
+<% end %>
+</div>
+
+
+
+

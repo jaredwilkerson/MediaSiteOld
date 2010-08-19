@@ -84,4 +84,33 @@ class SongsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def update_list
+    @output = " "
+    params[:song_names].each do |name|
+      @output+= name
+    end
+
+    @names = params[:song_names]
+    @songs = Array.new
+    @names.each do |name|
+      @songs << Song.find(:all, :conditions => { :title => name })
+    end
+
+    respond_to do |format|
+
+      if ('edit' == params[:submit]) && (false == @songs.empty?)
+        #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
+        format.html{ render "edit", :songs => @songs, :layout => 'maintenance'}
+         flash[:notice] = @output;
+      elsif ('delete' == params[:submit]) && (false == @songs.empty?)
+        #destroy
+         Song.destroy(@songs)
+         format.html { render 'maintenance/index', :layout => 'maintenance' }
+      else
+        flash[:notice] = 'Incorrect method submitted'
+        format.html { render 'maintenance/index', :layout => 'maintenance' }
+      end
+    end
+  end
 end
