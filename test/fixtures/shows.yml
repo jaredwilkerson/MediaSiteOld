@@ -1,11 +1,21 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: MyString
-  description: MyText
-  picture: MyString
+Fake:
+  title: Fake
+  description: A fake tv show
+  picture: none
 
-two:
-  title: MyString
-  description: MyText
-  picture: MyString
+The Fake Group:
+  title: The Fake Group
+  description: A fake tv show
+  picture: none
+
+So Fake:
+  title: So Fake
+  description: A fake tv show
+  picture: none
+
+Not as Fake as Possible:
+  title: Not as Fake as Possible
+  description: A fake tv show
+  picture: none

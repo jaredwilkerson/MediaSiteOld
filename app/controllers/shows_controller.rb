@@ -91,28 +91,33 @@ class ShowsController < ApplicationController
 
   def update_list
     @output = " "
-    params[:show_names].each do |name|
-      @output+= name
-    end
 
-    @names = params[:show_names]
-    @showss = Array.new
-    @names.each do |name|
-      @showss << Movie.find(:all, :conditions => { :title => name })
+    @shows = Array.new
+    if params[:show_names]
+      params[:show_names].each do |name|
+        @output+= name
+      end   
+
+      @names = params[:show_names]
+      
+      @names.each do |name|
+        @shows << Show.find(:all, :conditions => { :title => name })
+      end
     end
 
     respond_to do |format|
 
-      if 'edit' == params[:submit]
+      if ('edit' == params[:submit]) && (false == @shows.empty?)
         #format.html{ render "maintenance/index"}#, :movie_names => params[:movie_names]}
         format.html{ render "edit", :shows => @shows, :layout => 'maintenance'}
          flash[:notice] = @output;
-      elsif 'delete' == params[:submit]
+      elsif ('delete' == params[:submit]) && (false == @shows.empty?)
         #destroy
-         Movie.destroy(@shows)
+         Show.destroy(@shows)
          format.html { render 'maintenance/index', :layout => 'maintenance' }
       else
         flash[:notice] = 'Incorrect method submitted'
+        format.html { render 'maintenance/index', :layout => 'maintenance' }
       end
     end
   end
