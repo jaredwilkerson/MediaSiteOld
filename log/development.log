@@ -13356,3 +13356,865 @@ ActiveRecord::RecordNotFound (Couldn't find Movie with ID=update_list):
 Rendered rescues/_trace (67.6ms)
 Rendered rescues/_request_and_response (0.5ms)
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (99.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (28.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-08-23 10:58:18) [GET]
+  Parameters: {"id"=>"update_list", "method"=>"post"}
+  [4;36;1mMovie Columns (416.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (63.1ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with ID=update_list):
+  app/controllers/movies_controller.rb:18:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.2ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 11:14:18) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"0r1fxZw5CQztZ+QqKGNj6xXvpr/4EBgfzmtJocSJN4w=", "method"=>"post", "movie_names"=>["A Quick Guide To Testing"]}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 11:14:27) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 35ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-23 11:14:29) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (20.2ms)
+  [4;35;1mMovie Load (41.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (48.7ms)
+  [4;36;1mShow Columns (36.3ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (70.8ms)
+  [4;35;1mShow Load (31.5ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (60.5ms)
+  [4;36;1mSong Columns (25.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (61.4ms)
+  [4;35;1mSong Load (39.6ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (45.0ms)
+Completed in 438ms (View: 259, DB: 175) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 11:14:32) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "method"=>"post", "movie_names"=>["Fake"]}
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 61ms (View: 20, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:14:35) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie", "year"=>"2001", "picture"=>"none", "location"=>""}}
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (176.4ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/main
+Rendering movies/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #18 of app/views/movies/edit.html.erb:
+15:           
+16:             <h1>Editing movie</h1>
+17: 
+18:             <%@movies.each do |movie|%>
+19:               <div class="movie-maintenance-edit">
+20:               <% form_for(movie) do |f| %>
+21:                 <%= f.error_messages %>
+
+    app/views/movies/edit.html.erb:18
+    app/controllers/movies_controller.rb:75:in `update'
+    app/controllers/movies_controller.rb:69:in `update'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:18:12) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.5ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;35;1mMovie Update (117.8ms)[0m   [0mUPDATE `movies` SET `location` = 'none', `updated_at` = '2010-08-23 15:18:12' WHERE `id` = 397119669[0m
+  [4;36;1mSQL (109.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/movies/397119669
+Completed in 249ms (DB: 229) | 302 Found [http://localhost/movies/397119669]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#show (for 127.0.0.1 at 2010-08-23 11:18:12) [GET]
+  Parameters: {"id"=>"397119669"}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+Rendering template within layouts/main
+Rendering movies/show
+Completed in 36ms (View: 24, DB: 2) | 200 OK [http://localhost/movies/397119669]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:04) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.6ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 74ms (DB: 2) | 302 Found [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:16) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.5ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mMovie Update (0.3ms)[0m   [0;1mUPDATE `movies` SET `description` = 'A fake test movie.', `updated_at` = '2010-08-23 15:19:16' WHERE `id` = 397119669[0m
+  [4;35;1mSQL (47.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 68ms (DB: 50) | 302 Found [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 11:19:33) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "method"=>"post", "movie_names"=>["Fake"]}
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;35;1mMovie Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.4ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/movies/397119669]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.5ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:38) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.4ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 19ms (DB: 2) | 302 Found [http://localhost/movies/397119669]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:19:39) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.4ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000maintenance/index
+Completed in 20ms (DB: 2) | 302 Found [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:20:02) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.5ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/main
+Rendering maintenance/index
+Rendered movies/_new (3.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.5ms)
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (14.0ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 65ms (View: 43, DB: 5) | 200 OK [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 11:31:53) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.5ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+Rendered movies/_new (3.9ms)
+  [4;35;1mMovie Load (0.4ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.8ms)
+  [4;36;1mShow Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (13.0ms)
+  [4;35;1mShow Load (0.3ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (15.1ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.7ms)
+Completed in 67ms (View: 45, DB: 5) | 200 OK [http://localhost/movies/397119669]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 13:18:38) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "method"=>"post", "movie_names"=>["Fake"]}
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Fake') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 13:18:39) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"397119669", "movie"=>{"title"=>"Fake", "description"=>"A fake test movie.", "year"=>"2001", "picture"=>"none", "location"=>"none"}}
+  [4;36;1mMovie Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 397119669) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.5ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Fake' AND `movies`.year = 2001 AND `movies`.id <> 397119669) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+Rendered movies/_new (4.0ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.8ms)
+  [4;35;1mShow Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (14.4ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.8ms)
+  [4;35;1mSong Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (15.0ms)
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.8ms)
+Completed in 123ms (View: 46, DB: 6) | 200 OK [http://localhost/movies/397119669]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 13:19:29) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "method"=>"post", "movie_names"=>["Test Movie"]}
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Test Movie') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;36;1mMovie Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 13:19:35) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"475448094", "movie"=>{"title"=>"Test Movie", "description"=>"A fake test movie", "year"=>"2031", "picture"=>"none", "location"=>"not here"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 475448094) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 475448094) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.4ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Test Movie' AND `movies`.year = 2031 AND `movies`.id <> 475448094) LIMIT 1[0m
+  [4;36;1mMovie Update (0.3ms)[0m   [0;1mUPDATE `movies` SET `location` = 'not here', `updated_at` = '2010-08-23 17:19:35' WHERE `id` = 475448094[0m
+  [4;35;1mSQL (61.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+Rendered movies/_new (3.9ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.4ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;35;1mSong Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (14.1ms)
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 127ms (View: 42, DB: 67) | 200 OK [http://localhost/movies/475448094]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-08-23 13:19:38) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "method"=>"post", "movie_names"=>["Test Movie"]}
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Test Movie') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-23 13:19:40) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"NpY1pYgg/oZfx651u4h/2mU1EcOu0vsSc0TxMv/HZyU=", "id"=>"475448094", "movie"=>{"title"=>"Test Movie", "description"=>"A fake test movie", "year"=>"2031", "picture"=>"none", "location"=>"not here"}}
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 475448094) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 475448094) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (0.5ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Test Movie' AND `movies`.year = 2031 AND `movies`.id <> 475448094) LIMIT 1[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+Rendered movies/_new (4.0ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.8ms)
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (13.1ms)
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.9ms)
+  [4;36;1mSong Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (14.7ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.6ms)
+Completed in 120ms (View: 44, DB: 6) | 200 OK [http://localhost/movies/475448094]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:19:58) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-23 13:19:59) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.1ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.3ms)
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;36;1mSong Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (14.0ms)
+  [4;35;1mSong Load (0.3ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 60ms (View: 52, DB: 4) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:20:00) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:21:56) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:21:58) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:21:59) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:22:00) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-23 13:22:59) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.1ms)
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.6ms)
+  [4;35;1mShow Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.3ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.7ms)
+  [4;35;1mSong Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (14.0ms)
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.4ms)
+Completed in 65ms (View: 57, DB: 4) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-08-23 13:23:19) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (13.9ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;35;1mShow Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.1ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.6ms)
+  [4;35;1mSong Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (13.8ms)
+  [4;36;1mSong Load (0.3ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.3ms)
+Completed in 59ms (View: 51, DB: 4) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:23:27) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:45:04) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:45:06) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:45:07) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:46:34) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:47:49) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:47:51) [GET]
+  [4;35;1mMovie Load (0.6ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:47:54) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:47:56) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:47:57) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 13:48:03) [GET]
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 32ms (View: 23, DB: 1) | 200 OK [http://localhost/shows]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:52:28) [GET]
+  [4;35;1mMovie Load (0.6ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:52:33) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 69ms (View: 59, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:52:35) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:52:37) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:53:04) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:53:06) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 13:53:07) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 13:55:03) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 14:00:13) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:00:15) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:00:17) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-23 14:00:22) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:11:57) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:11:58) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:12:00) [GET]
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:12:02) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:12:53) [GET]
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/shows]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:12:54) [GET]
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:12:55) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:12:56) [GET]
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-08-23 14:12:56) [GET]
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 37ms (View: 27, DB: 1) | 200 OK [http://localhost/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:13:49) [GET]
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-08-23 14:13:50) [GET]
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 20ms (View: 10, DB: 1) | 200 OK [http://localhost/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:13:51) [GET]
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:13:52) [GET]
+  [4;36;1mMovie Load (0.9ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-08-23 14:13:53) [GET]
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/songs]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-08-23 14:13:54) [GET]
+  [4;36;1mShow Load (0.5ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 13ms (View: 4, DB: 1) | 200 OK [http://localhost/shows]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-08-23 14:13:54) [GET]
+  [4;35;1mMovie Load (0.6ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 16ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-08-23 14:13:55) [GET]
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/songs]

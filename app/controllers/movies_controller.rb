@@ -67,9 +67,10 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
 
     respond_to do |format|
+      @movie.reload
       if @movie.update_attributes(params[:movie])
         flash[:notice] = 'Movie was successfully updated.'
-        format.html { redirect_to(@movie) }
+        format.html { render 'maintenance/index', :layout => 'maintenance' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

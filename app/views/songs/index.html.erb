@@ -5,9 +5,9 @@
 <% end %>
 
 <% content_for :content_links do %>
-          <div class="content-link"><%= link_to 'Movies', movies_path %></div>
-          <div class="content-link"><%= link_to 'Shows', shows_path %></div>
-          <div class="content-link"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
+          <div class="content-link" onclick="location.href='<%=movies_path%>'"><%= link_to 'Movies', movies_path %></div>
+          <div class="content-link" onclick="location.href='<%=shows_path%>'"><%= link_to 'Shows', shows_path %></div>
+          <div class="selected-content-link" onclick="location.href='<%=songs_path%>'"><%= link_to 'Music', songs_path %></div><!this is just a placeholder till I make the music stuff>
 <% end %>
 
 <% content_for :display_window do %>
