@@ -5,8 +5,8 @@ jQuery.ajaxSetup({
 })
 
 $(document).ready(function(){
-    $("#new_movie").submit(function(){
-        $.post($(this).attr("action"), $(this).serialize(), null, "script");
+    $("form[class='edit_movie'").submit(function(){
+        $.post($(this).attr('action'), $(this).serialize(), null, 'script');
         return false;
     })
 })
