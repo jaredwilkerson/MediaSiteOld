@@ -5,8 +5,16 @@ jQuery.ajaxSetup({
 })
 
 $(document).ready(function(){
-    $("form[class='edit_movie'").submit(function(){
+/*    $("#new_movie").submit(function(){
         $.post($(this).attr('action'), $(this).serialize(), null, 'script');
         return false;
     })
+*/
+
+    $(document).delegate('form[id^="edit_mov"]', 'submit',(function(){
+        var form = $(this);
+        $.post(form.attr('action'), form.serialize(), null, 'script');
+        return false;
+    }))
 })
+
