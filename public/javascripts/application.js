@@ -5,15 +5,27 @@ jQuery.ajaxSetup({
 })
 
 $(document).ready(function(){
-/*    $("#new_movie").submit(function(){
-        $.post($(this).attr('action'), $(this).serialize(), null, 'script');
-        return false;
-    })
-*/
 
-    $(document).delegate('form[id^="edit_mov"]', 'submit',(function(){
+    /*
+     *Delegates the submit button on the edit forms to this so they go away as
+     *you update the the movies/shows/songs. 
+     **/
+    $(document).delegate('form[id^="edit_movie_"]', 'submit',(function(){
         var form = $(this);
         $.post(form.attr('action'), form.serialize(), null, 'script');
+        form.remove();
+        return false;
+    }))
+    $(document).delegate('form[id^="edit_show_"]', 'submit',(function(){
+        var form = $(this);
+        $.post(form.attr('action'), form.serialize(), null, 'script');
+        form.remove();
+        return false;
+    }))
+    $(document).delegate('form[id^="edit_song_"]', 'submit',(function(){
+        var form = $(this);
+        $.post(form.attr('action'), form.serialize(), null, 'script');
+        form.remove();
         return false;
     }))
 })

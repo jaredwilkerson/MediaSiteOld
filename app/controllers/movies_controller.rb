@@ -36,15 +36,16 @@ class MoviesController < ApplicationController
   end
 
   # GET /movies/1/edit
-  def edit 
 
-    respond_to do |format|
-      format.html # edit.html.erb
-      format.js
-      format.xml  { render :xml => @movie }
-    end
+  #def edit
 
-  end
+  #  respond_to do |format|
+  #    format.html # edit.html.erb
+  #    format.xml  { render :xml => @movie }
+  #  end
+
+  #end
+
 
   # POST /movies
   # POST /movies.xml

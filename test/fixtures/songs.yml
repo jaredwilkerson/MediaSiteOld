@@ -1,21 +1,31 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: MyString
-  genre: MyString
-  artist: MyString
-  album: MyString
+Fake It Hard:
+  title: Fake It Hard
+  genre: Fake
+  artist: Faker
+  album: Non-Existant
   year: 1
-  picture: MyString
+  picture: none
   play_count: 1
   last_played: 2010-07-14 10:23:35
 
-two:
-  title: MyString
-  genre: MyString
-  artist: MyString
-  album: MyString
+Fake Song:
+  title: Fake Song
+  genre: Fake
+  artist: Faker
+  album: Non-Existant
   year: 1
-  picture: MyString
+  picture: none
+  play_count: 1
+  last_played: 2010-07-14 10:23:35
+
+Fake Beat:
+  title: Fake Beat
+  genre: Fake
+  artist: Faker
+  album: Non-Existant
+  year: 1
+  picture: none
   play_count: 1
   last_played: 2010-07-14 10:23:35
