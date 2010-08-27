@@ -4,6 +4,13 @@ jQuery.ajaxSetup({
     'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
 
+function updateAndFade(form){
+     $.post(form.attr('action'), form.serialize(), function(data){
+            alert("Post is done. Do some slidy thing. Also, what you got returned was: " + data);
+            form.fadeOut("slow");
+        }, 'script');
+}
+
 $(document).ready(function(){
 
     /*
@@ -12,20 +19,17 @@ $(document).ready(function(){
      **/
     $(document).delegate('form[id^="edit_movie_"]', 'submit',(function(){
         var form = $(this);
-        $.post(form.attr('action'), form.serialize(), null, 'script');
-        form.remove();
+        updateAndFade(form);
         return false;
     }))
     $(document).delegate('form[id^="edit_show_"]', 'submit',(function(){
         var form = $(this);
-        $.post(form.attr('action'), form.serialize(), null, 'script');
-        form.remove();
+        updateAndFade(form);
         return false;
     }))
     $(document).delegate('form[id^="edit_song_"]', 'submit',(function(){
         var form = $(this);
-        $.post(form.attr('action'), form.serialize(), null, 'script');
-        form.remove();
+        updateAndFade(form);
         return false;
     }))
 })
