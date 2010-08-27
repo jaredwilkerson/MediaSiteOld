@@ -16330,3 +16330,17 @@ Processing MoviesController#update (for 127.0.0.1 at 2010-08-27 10:00:24) [PUT]
   [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
 Rendering movies/update
 Completed in 24ms (View: 1, DB: 2) | 200 OK [http://localhost/movies/40248514]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-08-27 10:53:38) [PUT]
+  Parameters: {"authenticity_token"=>"4NBNk1spZUDWfqxutVy4E1L7E8QsOmkvwRhvvqdS2Pg=", "id"=>"74005883", "movie"=>{"title"=>"The Secrets of Faking", "description"=>"A fake test movie", "year"=>"2041", "picture"=>"none", "location"=>""}}
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 74005883) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 74005883) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mMovie Exists (0.5ms)[0m   [0;1mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'The Secrets of Faking' AND `movies`.year = 2041 AND `movies`.id <> 74005883) LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering movies/update
+Completed in 24ms (View: 1, DB: 2) | 200 OK [http://localhost/movies/74005883]

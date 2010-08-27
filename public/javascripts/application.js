@@ -6,7 +6,6 @@ jQuery.ajaxSetup({
 
 function updateAndFade(form){
      $.post(form.attr('action'), form.serialize(), function(data){
-            alert("Post is done. Do some slidy thing. Also, what you got returned was: " + data);
             form.fadeOut("slow");
         }, 'script');
 }
