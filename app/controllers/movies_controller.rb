@@ -56,11 +56,11 @@ class MoviesController < ApplicationController
       if @movie.save
         flash[:notice] = 'Movie was successfully created.'
         format.html { render 'maintenance/index', :layout => 'maintenance' }
-        format.js
+        #format.js
         format.xml  { render :xml => @movie, :status => :created, :location => @movie }
       else
         format.html { render 'maintenance/index', :layout => 'maintenance' }
-        format.js
+        #format.js
         format.xml  { render :xml => @movie.errors, :status => :unprocessable_entity }
       end
     end
@@ -76,7 +76,7 @@ class MoviesController < ApplicationController
       if @movie.update_attributes(params[:movie])
         flash[:notice] = 'Movie was successfully updated.'
         format.html { render 'maintenance/index', :layout => 'maintenance' }
-        format.js   
+        format.js
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
