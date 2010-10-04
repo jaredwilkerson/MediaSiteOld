@@ -16664,3 +16664,30 @@ Rendered songs/_new (14.9ms)
   [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
 Rendered songs/_select_box (2.5ms)
 Completed in 61ms (View: 53, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (28.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (116.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateShows (20100701115649)
+Migrating to CreateMovies (20100701115658)
+Migrating to AddLastPlayedColumn (20100714140328)
+Migrating to CreateSongs (20100714142335)
+Migrating to AddLocationColumn (20100721150217)
+Migrating to CreateUsers (20100909153104)
+  [4;36;1mSQL (191.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password` varchar(255), `role_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100909153104')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `movies`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `movies`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `shows`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `shows`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `songs`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `songs`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
