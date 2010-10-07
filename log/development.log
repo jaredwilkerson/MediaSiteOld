@@ -16691,3 +16691,265 @@ Migrating to CreateUsers (20100909153104)
   [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
   [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-05 13:43:57) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 113ms (View: 108, DB: 42) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-05 13:43:58) [GET]
+  [4;36;1mMovie Load (79.6ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 121ms (View: 30, DB: 80) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-05 13:44:19) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create and destroy):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-05 13:45:20) [GET]
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+
+ActionView::MissingTemplate (Missing template login/index.erb in view path app/views):
+  app/controllers/login_controller.rb:8:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-05 13:45:51) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering login/index
+  [4;35;1mMovie Columns (98.2ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Completed in 129ms (View: 20, DB: 99) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-05 13:55:11) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering login/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 42ms (View: 30, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-10-05 13:55:21) [GET]
+Rendering template within layouts/main
+Rendering home/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-10-05 13:56:13) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering movies/index
+Completed in 15ms (View: 4, DB: 1) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShowsController#index (for 127.0.0.1 at 2010-10-05 13:56:35) [GET]
+  [4;35;1mShow Load (0.5ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendering template within layouts/main
+Rendering shows/index
+Completed in 47ms (View: 26, DB: 1) | 200 OK [http://localhost/shows]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SongsController#index (for 127.0.0.1 at 2010-10-05 13:56:36) [GET]
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendering template within layouts/main
+Rendering songs/index
+Completed in 44ms (View: 23, DB: 1) | 200 OK [http://localhost/songs]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-10-05 13:56:39) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (18.9ms)
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (13.6ms)
+  [4;35;1mShow Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (20.5ms)
+  [4;36;1mShow Load (0.4ms)[0m   [0;1mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (9.2ms)
+  [4;35;1mSong Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (25.3ms)
+  [4;36;1mSong Load (0.4ms)[0m   [0;1mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (10.3ms)
+Completed in 165ms (View: 156, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update_list (for 127.0.0.1 at 2010-10-05 13:57:00) [POST]
+  Parameters: {"submit"=>"edit", "authenticity_token"=>"3ibuOsGQZtiix9/hG1T1wH9Zo7dO81NFMcsN/L1snlo=", "method"=>"post", "movie_names"=>["Quick Test", "Testing for Dummies", "The Secrets of Faking", "A Blind Test", "A Quick Guide To Testing", "I Need A Good Test", "Faking It"]}
+  [4;35;1mMovie Load (30.7ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Quick Test') [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Testing for Dummies') [0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'The Secrets of Faking') [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Blind Test') [0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'A Quick Guide To Testing') [0m
+  [4;36;1mMovie Load (0.3ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`title` = 'I Need A Good Test') [0m
+  [4;35;1mMovie Load (0.3ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`title` = 'Faking It') [0m
+Rendering template within layouts/maintenance
+Rendering movies/edit
+  [4;36;1mMovie Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Completed in 138ms (View: 56, DB: 34) | 200 OK [http://localhost/movies/update_list?method=post]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MoviesController#update (for 127.0.0.1 at 2010-10-05 13:57:11) [PUT]
+  Parameters: {"authenticity_token"=>"3ibuOsGQZtiix9/hG1T1wH9Zo7dO81NFMcsN/L1snlo=", "id"=>"12348376", "movie"=>{"title"=>"Quick Test", "description"=>"A fake test movie", "year"=>"2000", "picture"=>"none", "location"=>"none"}}
+  [4;35;1mMovie Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `movies`[0m
+  [4;36;1mMovie Load (0.4ms)[0m   [0;1mSELECT * FROM `movies` WHERE (`movies`.`id` = 12348376) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `movies` WHERE (`movies`.`id` = 12348376) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMovie Exists (8.9ms)[0m   [0mSELECT `movies`.id FROM `movies` WHERE (`movies`.`title` = BINARY 'Quick Test' AND `movies`.year = 2000 AND `movies`.id <> 12348376) LIMIT 1[0m
+  [4;36;1mMovie Update (5.1ms)[0m   [0;1mUPDATE `movies` SET `location` = 'none', `updated_at` = '2010-10-05 17:57:11' WHERE `id` = 12348376[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCOMMIT[0m
+Rendering movies/update
+Completed in 149ms (View: 8, DB: 78) | 200 OK [http://localhost/movies/12348376]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MaintenanceController#index (for 127.0.0.1 at 2010-10-05 13:57:19) [GET]
+Rendering template within layouts/maintenance
+Rendering maintenance/index
+  [4;36;1mMovie Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `movies`[0m
+Rendered movies/_new (14.7ms)
+  [4;35;1mMovie Load (0.5ms)[0m   [0mSELECT * FROM `movies` [0m
+Rendered movies/_select_box (4.7ms)
+  [4;36;1mShow Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shows`[0m
+Rendered shows/_new (12.8ms)
+  [4;35;1mShow Load (0.4ms)[0m   [0mSELECT * FROM `shows` [0m
+Rendered shows/_select_box (2.8ms)
+  [4;36;1mSong Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `songs`[0m
+Rendered songs/_new (15.4ms)
+  [4;35;1mSong Load (0.4ms)[0m   [0mSELECT * FROM `songs` [0m
+Rendered songs/_select_box (2.7ms)
+Completed in 63ms (View: 55, DB: 5) | 200 OK [http://localhost/maintenance]
+  [4;36;1mSQL (31.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-06 09:13:58) [GET]
+  [4;36;1mMovie Load (100.0ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/main
+Rendering login/index
+  [4;35;1mUser Columns (81.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 463ms (View: 170, DB: 220) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (59.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 07:28:01) [GET]
+  [4;36;1mMovie Load (183.8ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (82.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 816ms (View: 479, DB: 334) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 07:28:38) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 30ms (View: 19, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 10:04:59) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 30ms (View: 19, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 10:05:45) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 30ms (View: 18, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 10:06:01) [GET]
+  [4;36;1mMovie Load (1.1ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 101ms (View: 29, DB: 4) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 10:06:46) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 20, DB: 2) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginController#index (for 127.0.0.1 at 2010-10-07 10:07:15) [GET]
+  [4;36;1mMovie Load (0.5ms)[0m   [0;1mSELECT * FROM `movies` [0m
+Rendering template within layouts/login
+Rendering login/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 30ms (View: 18, DB: 2) | 200 OK [http://localhost/login]

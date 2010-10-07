@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>MediaSite</title>
+  <%= stylesheet_link_tag "mediasite", :media => "all" %>
+  <%= javascript_include_tag "jquery", "application" %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+<% flash[:notice] = ''%>
+
+<%= yield %>
+<div class="header">
+
+</div><!this is the header row>
+  <div class="content-row">
+    <div class="col-wrapper">
+      <!-- <div class="left-col"></div><!this is the left column> -->
+      <div class="middle-col"><!the middle column with all the "stuff">
+        <div class="login-window"><!box containing the login window>
+          <%= yield :login_window %>
+        </div>
+      </div>
+      <!--<div class="right-col"></div><!this is the right column> -->
+    </div>
+  </div>
+<div class="footer"></div><!this is the footer>
+</body>
+</html>
+<!login page>

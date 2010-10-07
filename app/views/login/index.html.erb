@@ -1,0 +1,28 @@
+<!login page>
+
+<% content_for :login_window do %>
+<br/>
+<br/>
+<br/>
+<br/>
+<p style="font-weight: bold;text-align: center">Login</p>
+
+    <%@user = User.new%>
+
+    <% form_for(@user) do |f| %>
+      <%= f.error_messages %>
+
+      <p style="text-align: center">
+        <%= f.label :name %>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.text_field :name, :size => 20%>
+      </p>
+      <p style="text-align: center">
+        <%= f.label :password %>
+        &nbsp;&nbsp;<%= f.text_field :password, :size=>20 %>
+      </p>      
+
+      <p style="text-align: center">
+        <%= f.submit 'Login' %>
+      </p>
+    <% end %>
+<% end %>

@@ -1,5 +1,17 @@
 class LoginController < ApplicationController
+  #layout "login"
+  
+  # GET /movies
+  # GET /movies.xml
+  def index
+    @movies = Movie.all
 
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @movies }
+    end
+  end
+  
   def create
   #  if user = User.authenticate(params[:username, params[:password])
       # Save the user ID in the session so it can be used in subsequent requests
