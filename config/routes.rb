@@ -1,21 +1,21 @@
 MediaSite::Application.routes.draw do |map|
-  map.resources :users
+  #map.resources :users
 
-  map.root :controller => "home"
+  #map.root :controller => "home"
   
-  map.resources :songs
+  #map.resources :songs
 
-  map.resources :movies
+  #map.resources :movies
 
-  map.resources :shows
+  #map.resources :shows
 
-  map.resources :shows
+  #map.resources :shows
 
-  map.resources :movies
+  #map.resources :movies
 
-  map.resources :home
+  #map.resources :home
 
-  map.resources :maintenance
+  #map.resources :maintenance
 
   
 
@@ -58,8 +58,8 @@ MediaSite::Application.routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  #map.connect ':controller/:action/:id'
+  #map.connect ':controller/:action/:id.:format'
 
 #The stuff below is the new stuff for rails 3, TODO:look at it later
   # The priority is based upon order of creation:
@@ -75,6 +75,21 @@ MediaSite::Application.routes.draw do |map|
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :users
+
+  resources :songs
+
+  resources :movies
+
+  resources :shows
+
+  resources :shows
+
+  resources :movies
+
+  resources :home
+
+  resources :maintenance
 
   # Sample resource route with options:
   #   resources :products do
@@ -112,10 +127,12 @@ MediaSite::Application.routes.draw do |map|
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
+  root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  #TODO: make this more RESTful and take this out an make named routes
+  match ':controller(/:action(/:id(.:format)))'
 end

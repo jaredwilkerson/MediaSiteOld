@@ -16,9 +16,9 @@
           
             <h1>Editing movie</h1>
 
-            <%=@movies.each do |movie|%>
+            <%= @movies.each do |movie| %>
               <div class="movie-maintenance-edit">
-              <%= form_for movie do |f| %>
+              <%= form_for(:movie) do |f| %>
                 <%= f.error_messages %>
 
                 <p>
