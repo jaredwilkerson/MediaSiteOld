@@ -15,7 +15,7 @@ class ShowsController < ApplicationController
   # GET /shows/1
   # GET /shows/1.xml
   def show
-    @show = Show.find(params[:id])
+    @show = Show.where(:id => params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,7 +36,7 @@ class ShowsController < ApplicationController
 
   # GET /shows/1/edit
   def edit
-    @show = Show.find(params[:id])
+    @show = Show.where(:id => params[:id])
   end
 
   # POST /shows
@@ -59,7 +59,7 @@ class ShowsController < ApplicationController
   # PUT /shows/1
   # PUT /shows/1.xml
   def update
-    @show = Show.find(params[:id])
+    @show = Show.where(:id => params[:id])
 
     respond_to do |format|
       if @show.update_attributes(params[:show])
@@ -101,7 +101,7 @@ class ShowsController < ApplicationController
       @names = params[:show_names]
       
       @names.each do |name|
-        @shows << Show.find(:all, :conditions => { :title => name })
+        @shows << Show.where(:title => name)
       end
     end
 

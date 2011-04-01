@@ -15,7 +15,7 @@ class SongsController < ApplicationController
   # GET /songs/1
   # GET /songs/1.xml
   def show
-    @song = Song.find(params[:id])
+    @song = Song.where(:id => params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -36,7 +36,7 @@ class SongsController < ApplicationController
 
   # GET /songs/1/edit
   def edit
-    @song = Song.find(params[:id])
+    @song = Song.where(:id => params[:id])
   end
 
   # POST /songs
@@ -59,7 +59,7 @@ class SongsController < ApplicationController
   # PUT /songs/1
   # PUT /songs/1.xml
   def update
-    @song = Song.find(params[:id])
+    @song = Song.where(:id => params[:id])
 
     respond_to do |format|
       if @song.update_attributes(params[:song])
@@ -94,7 +94,7 @@ class SongsController < ApplicationController
     @names = params[:song_names]
     @songs = Array.new
     @names.each do |name|
-      @songs << Song.find(:all, :conditions => { :title => name })
+      @songs << Song.where(:title => name)
     end
 
     respond_to do |format|
