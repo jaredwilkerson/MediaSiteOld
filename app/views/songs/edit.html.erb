@@ -18,7 +18,7 @@
 
             <%@songs.each do |song|%>
 
-              <% form_for(song) do |f| %>
+              <%= form_for(song) do |f| %>
                 <%= f.error_messages %>
 
                 <p>

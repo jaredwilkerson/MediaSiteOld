@@ -1,6 +1,6 @@
 <!login page>
 
-<% content_for :login_window do %>
+<%= content_for :login_window do %>
 <br/>
 <br/>
 <br/>
@@ -9,7 +9,7 @@
 
     <%@user = User.new%>
 
-    <% form_for(@user) do |f| %>
+    <%= form_for(@user) do |f| %>
       <%= f.error_messages %>
 
       <p style="text-align: center">
